@@ -72,10 +72,6 @@ public class GameLogicService {
         }
     }
 
-    public boolean isDealerTurnOver() {
-        return dealerSum >= 17;
-    }
-
     public int reducePlayerAce() {
         while (playerSum > 21 && playerAceCount > 0) {
             playerSum -= 10;
